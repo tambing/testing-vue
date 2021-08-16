@@ -19,9 +19,11 @@
 <body>
     <h1>Hello, Vue</h1>
     <div id="app">
+        <a v-bind:href="url">Go to w3school</a>
         <div v-if="showBook">
             <ul>
                 <li v-for="book in books">
+                    <img style="width: 5rem;" :src="book.img" :alt="book.title">
                     <h3>book.title</h3>
                     <p>book.author</p>
                 </li>

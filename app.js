@@ -1,11 +1,12 @@
 const app = Vue.createApp({
     data(){
         return {
+            url: 'https://www.w3schools.com/',
             showBook: true,
             books: [
-                {title: 'The Final Empire', author: 'Erasmus'},
-                {title: 'The Last Empire', author: 'Tambing'},
-                {title: 'The Third Empire', author: 'Pandu Tambing'}
+                {title: 'The Final Empire', author: 'Erasmus', img: 'assets/eras.png'},
+                {title: 'The Last Empire', author: 'Tambing', img: 'assets/putri.png'},
+                {title: 'The Third Empire', author: 'Pandu Tambing', img: 'assets/sesil.png'}
             ],
             x: 0,
             y: 0
