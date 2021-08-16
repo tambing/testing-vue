@@ -2,9 +2,11 @@ const app = Vue.createApp({
     data(){
         return {
             showBook: true,
-            title: 'The Final Empire',
-            author: 'Erasmus Tambing',
-            age: 23,
+            books: [
+                {title: 'The Final Empire', author: 'Erasmus'},
+                {title: 'The Last Empire', author: 'Tambing'},
+                {title: 'The Third Empire', author: 'Pandu Tambing'}
+            ],
             x: 0,
             y: 0
         }

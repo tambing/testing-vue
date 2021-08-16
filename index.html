@@ -20,10 +20,16 @@
     <h1>Hello, Vue</h1>
     <div id="app">
         <div v-if="showBook">
-            <p>{{ title }} - {{ author }} - {{age}}</p>
+            <ul>
+                <li v-for="book in books">
+                    <h3>book.title</h3>
+                    <p>book.author</p>
+                </li>
+            </ul>
+            <!-- <p>{{ title }} - {{ author }} - {{age}}</p>
             <button v-on:click="age++">Increse Age</button>
             <button @click="age--">Decrease Age</button>
-            <div @click="changeTitle('Ini Budi')">Change Title</div>
+            <div @click="changeTitle('Ini Budi')">Change Title</div> -->
         </div>
         <div v-else>
             <p>No data</p>
