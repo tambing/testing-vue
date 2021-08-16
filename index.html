@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://unpkg.com/vue@3.0.2"></script>
+    <style>
+        .box{
+            padding: 100px 0;
+            width: 400px;
+            text-align: center;
+            background: #ddd;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, Vue</h1>
@@ -21,7 +31,12 @@
         <br>
         <Button @click="showHideBook">
             <span>{{showBook ? 'Hide' : 'Show'}} Book</span>
-        </Button>
+        </Button><br>
+        <!-- Lesson 11 -->
+        <div class="box" @mouseover="handleEvent($event, 5)">MouseOver</div>
+        <div class="box" @mouseleave="handleEvent">MouseLeave</div>
+        <div class="box" @dblclick="handleEvent">Double click</div>
+        <div class="box" @mousemove="handleMouseMove">Position - X : {{x}} -- Y : {{y}}</div>
     </div>
     <script src="app.js"></script>
 </body>
