@@ -4,9 +4,9 @@ const app = Vue.createApp({
             url: 'https://www.w3schools.com/',
             showBook: true,
             books: [
-                {title: 'The Final Empire', author: 'Erasmus', img: 'assets/eras.png'},
-                {title: 'The Last Empire', author: 'Tambing', img: 'assets/putri.png'},
-                {title: 'The Third Empire', author: 'Pandu Tambing', img: 'assets/sesil.png'}
+                {title: 'The Final Empire', author: 'Erasmus', img: 'assets/eras.png', isFav: true},
+                {title: 'The Last Empire', author: 'Tambing', img: 'assets/putri.png', isFav: false},
+                {title: 'The Third Empire', author: 'Pandu Tambing', img: 'assets/sesil.png', isFav: true}
             ],
             x: 0,
             y: 0

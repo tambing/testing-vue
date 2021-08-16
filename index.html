@@ -14,6 +14,29 @@
             margin: 20px;
             display: inline-block;
         }
+        body{
+            background: #eee;
+            max-width: 960px;
+            margin: 10px auto;
+        }
+        p, h3, ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            background: #fff;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.fav{
+            background: #ff9ed2;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -22,7 +45,7 @@
         <a v-bind:href="url">Go to w3school</a>
         <div v-if="showBook">
             <ul>
-                <li v-for="book in books">
+                <li v-for="book in books" :class="{fav : book.isFav}">
                     <img style="width: 5rem;" :src="book.img" :alt="book.title">
                     <h3>book.title</h3>
                     <p>book.author</p>
