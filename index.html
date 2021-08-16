@@ -45,7 +45,7 @@
         <a v-bind:href="url">Go to w3school</a>
         <div v-if="showBook">
             <ul>
-                <li v-for="book in books" :class="{fav : book.isFav}">
+                <li v-for="book in books" :class="{fav : book.isFav}" @click="toggleFav(book)">
                     <img style="width: 5rem;" :src="book.img" :alt="book.title">
                     <h3>book.title</h3>
                     <p>book.author</p>
